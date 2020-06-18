@@ -1,0 +1,35 @@
+{
+  "name": "worriedsheep",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "lint": "semistandard --fix ./app.js && semistandard --fix ./routes/*.js && semistandard --fix ./public/javascripts/*.js"
+  },
+  "dependencies": {
+    "@slack/rtm-api": "^5.0.4",
+    "@slack/web-api": "^5.9.0",
+    "axios": "^0.19.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "jquery": "^3.5.1",
+    "morgan": "~1.9.0",
+    "request": "^2.88.2",
+    "scrollmagic": "^2.0.7",
+    "zoomus": "^0.1.4"
+  },
+  "devDependencies": {
+    "semistandard": "^14.2.0"
+  },
+  "semistandard": {
+    "global": [
+      "$",
+      "gsap",
+      "ScrollMagic"
+    ]
+  }
+}

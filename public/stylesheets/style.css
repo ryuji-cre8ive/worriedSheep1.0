@@ -1,0 +1,494 @@
+body{
+  background: #e6eae6;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: none;
+}
+
+li{
+  list-style: none;
+}
+
+li:hover{
+  opacity: 0.5;
+}
+
+.page-header{
+  display: flex;
+  padding: 10px;
+  background: #82cddd;
+  position: relative;
+  z-index: 20;
+}
+.title{
+  width: 60px;
+  height: auto;
+  margin: 10px 10px 10px 30px;
+}
+
+.menu{
+  display: flex;
+  margin-left: 600px;
+  list-style: none;
+}
+.menu a{
+  color: #00608d;
+  margin-left: 30px;
+
+}
+header li{
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+.top{
+  background-image: url("../image/top-image.jpg");
+  width: 100vw;
+  height: 790px;
+}
+.top::before{
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  z-index: 1;
+}
+.top-text{
+  color: white;
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  margin-top: 150px;
+}
+.top-text h1{
+  font-size: 50px;
+  letter-spacing: 2rem;
+  margin-bottom: 100px;
+  margin-top: 250px;
+}
+.top-text h2{
+  font-size: 35px;
+  letter-spacing: 2rem;
+  margin-bottom: 0;
+}
+.top-text p{
+  font-size: 20px;
+  letter-spacing: 1rem;
+}
+.top-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  margin-top: 25px;
+  background: #a1d8e6;
+  display: inline-block;
+  padding: 20px 40px;
+  text-decoration: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  font-size: 20px;
+  border-radius:20px;
+  cursor: pointer;
+}
+.top-button a{
+  color: black;
+  padding: 20px 40px;
+}
+.top-button:hover{
+  opacity: 0.9;
+}
+
+.top-button:active{
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+.about{
+  width: 100%;
+  height: 700px;
+  padding-top: 130px;
+  background: #a1d8e6;
+  font-size: 20px;
+  position: relative;
+}
+.about::before{
+  background: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+/* コピペ */
+.about h1 {
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+  font-size: 50px;
+  text-shadow:  10px 10px 10px dimgray;
+}
+/* .about h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 44px;
+  height: 2px;
+  background-color: black;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+.about h1:before {
+  left:0;
+}
+.about h1:after {
+  right: 0;
+} */
+/* コピペ終了 */
+.section{
+  position: absolute;
+  z-index: 200;
+}
+.about .section{
+  top: 80px;
+  left: 400px;
+}
+.section img{
+  width: 40px;
+}
+.about-text{
+  position:absolute;
+  left: 100px;
+  width: 800px;
+  padding: 70px 10px;
+  background: white;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .5);
+  z-index: 50;
+  border-radius: 20px;
+}
+.sheep1{
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  z-index: 300;
+  width: 120px;
+}
+.sheep2{
+  position: absolute;
+  top: 500px;
+  right: 200px;
+  z-index: 200;
+  width: 200px;
+}
+.sheep3{
+  position: absolute;
+  top: 650px;
+  left: 100px;
+  z-index: 200;
+  width: 130px;
+}
+.how{
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.how .section{
+  top: 30px;
+  left: 450px;
+}
+.how h1{
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+  font-size: 50px;
+  text-shadow:  10px 10px 10px dimgray;
+}
+
+#reveal1 {
+  opacity: 0;
+  -webkit-transform: scale(0.9);
+     -moz-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+       -o-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 1s ease-in-out;
+     -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+       -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
+}
+
+#reveal1.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+
+.how{
+  background: #dbebc4;
+  padding-top: 30px;
+}
+
+.desc{
+  position: relative;
+}
+.first{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 200px;
+  padding: 50px;
+  background: white;
+  font-size:20px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .5);
+  border-radius: 20px;
+}
+.second{
+  position: absolute;
+  top: 250px;
+  left: 550px;
+  width: 200px;
+  padding: 50px;
+  background: white;
+  font-size:20px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .5);
+  border-radius: 20px;
+}
+.third{
+  position: absolute;
+  top: 350px;
+  right: 100px;
+  width: 200px;
+  padding: 70px 50px;
+  background: white;
+  font-size:20px;
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, .5);
+  border-radius: 20px;
+}
+
+/*fade*/
+.digit {
+  opacity: 0;
+  -webkit-transform: translateX(-40px);
+     -moz-transform: translateX(-40px);
+      -ms-transform: translateX(-40px);
+       -o-transform: translateX(-40px);
+          transform: translateX(-40px);
+  -webkit-transition: all 0.6s ease-out;
+     -moz-transition: all 0.6s ease-out;
+      -ms-transition: all 0.6s ease-out;
+       -o-transition: all 0.6s ease-out;
+          transition: all 0.6s ease-out;
+}
+.digit.visible {
+  opacity: 1;
+  -webkit-transform: none;
+     -moz-transform: none;
+      -ms-transform: none;
+       -o-transform: none;
+          transform: none;
+}
+.digit:nth-child(2) {
+  margin-top: 50px;
+}
+.digit:nth-child(3) {
+  margin-top: 100px;
+}
+.digit:nth-child(4) {
+  margin-top: 150px;
+}
+.digit:nth-child(5) {
+  margin-top: 200px;
+}
+
+.ask{
+  width: 100%;
+  height: 700px;
+  position: relative;
+  background: #e6afcf;
+}
+
+.ask h1{
+  position: relative;
+  display: inline-block;
+  padding: 0 45px;
+  font-size: 50px;
+  text-shadow:  10px 10px 10px dimgray;
+}
+.ask .section{
+  top: 30px;
+  left: 500px;
+}
+
+/* コピペ */
+body{
+  overflow-y: scroll;
+  background-color: #EBEBEB;  
+}
+.wrapper {
+  width: 80%;
+  height: 80%;
+  margin: 5% auto 0 auto;
+  position: absolute;
+  
+}
+.font {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+.form {
+  text-align: center; 
+  -webkit-animation: bounce 1.5s infinite;
+  -moz-animation: bounce 1.5s infinite;
+  animation: bounce 1.5s infinite;
+  top: 200px;
+  left: 230px;
+  position: absolute;
+  width: 90%;
+  height: 80%;
+}
+.shadow{
+  box-shadow: 0px 0px 20px 5px #AAA;
+  opacity: 0.5;
+  border-radius: 100px;
+  width: 45%; 
+  margin: 40px auto 0 auto;
+  padding: 0 10px;  
+  -webkit-animation: shadow 1.5s infinite;
+}
+.field-in {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 50%;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.name {
+  background-color: #EE78D1;  
+  border-bottom: 5px solid #CB64B2;
+}
+.name:hover{
+  background-color: #DF1B76;
+  border-bottom: 5px solid #B2175F;
+}
+.name:focus, .email:focus, .message:focus{
+  outline: none;
+  padding:15px;
+}
+.email {
+  background-color: #7239C1;  
+  border-bottom: 5px solid #502789;
+}
+.email:hover{
+  background-color: #2014CB;
+  border-bottom: 5px solid #18108E;
+}
+.message {   
+  background-color: #0F9BE6;
+  border-bottom: 5px solid #1185C3;
+  overflow: hidden;
+  height: 50px;
+}
+.message:hover{
+  background-color: #2DD7BB;
+  border-bottom: 5px solid #2BB09A;
+  height: 150px;
+}
+.submit{
+  border-radius:5px;
+  padding:10px;
+  background-color: #EE78D1;  
+  border: none;
+  border-bottom: 5px solid #CB64B2;  
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.submit:hover{
+  -webkit-transform: translate(0, 4px);
+  border-bottom: 2px solid #CB64B2;  
+  box-shadow: inset 0px 0px 10px 10px #CF5DB2;
+  cursor: pointer;
+}
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { 
+   color: white;
+}
+
+::-moz-placeholder { 
+   color: white; 
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+@-webkit-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -webkit-transform: translate(0, 8px);
+  }
+}
+@-moz-keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    -moz-transform: translate(0, 8px);
+  }
+}
+@keyframes bounce{
+  0%{
+    
+  }
+  50%{
+    transform: translate(0, 8px);
+  }
+}
+@-webkit-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@-moz-keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+@keyframes shadow{
+  0%{
+    
+  }
+  50%{
+    opacity: 0.8;
+    width: 50%;
+  }
+}
+

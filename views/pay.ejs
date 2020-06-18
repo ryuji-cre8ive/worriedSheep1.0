@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>payments</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <a href="/" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
+  </header>
+
+  <div class="caution">
+    <h1>- お読みください -</h1>
+    <p>一度課金してしまうと返金の方ができません。</p>
+    <p>ご了承ください。</p>
+  </div>
+  
+  <div class="haveKyash">
+    <h1>Kyashをお持ちの方</h1>
+    <h4>お持ちのiPhoneもしくはAndroidでお支払いください。</h4>
+    <img src="./image/my-qr.jpeg" alt="my-QRcode" width="300px">
+    <h4>希望する日程を記してください</h4>
+    <form action="/pay/ok" method="post">
+      <p>形式はYYYY-MM-DD HH:MM:ss</p>
+      <input type="text" name="date">
+      <input type="submit" value="OK">
+    </form>
+    
+  </div>
+
+  <div class="noKyash">
+    <h4>AppStore or GooglePlayからKyashをダウンロードしてください。</h4>
+    <h4>お手数をおかけして申し訳ありません</h4>
+  </div>
+</body>
+</html>

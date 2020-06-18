@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Worriedsheep</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+  <div class="top">
+    <header class="page-header">
+      <a href="#" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#how">How</a></li>
+        <li><a href="/pay">Pay</a></li>
+        <li><a href="#ask">お問い合わせ</a></li>
+      </ul>
+    </header>
+    <div class="top-text">
+      <h1>Worried Sheeps</h1>
+      <h2>悩みを誰かに相談したい</h2>
+      <p>そんなあなたのためにこのサービスはあります。</p>
+      <button class="top-button"><a href="/pay">今すぐ相談する</a></button>
+    </div>
+    
+  </div>
+  <div class="about" id="about">
+    <div class="section">
+      <img src="./image/sheep.svg" alt="sheep">
+      <h1>Worried Sheeps</h1>
+      <img src="./image/sheep.svg" alt="sheep">
+    </div>
+    <div class="spacer s2"></div>
+    <div id="trigger1" class="spacer s0"></div>
+
+    <div class="about-text" id="reveal1">
+      <p>家族や友達にはなかなか言い出しづらい。</p>
+      <p>でも自分一人で考えたりしているとどんどんネガティブになってしまう。</p>
+      <p>そんなあなたのために相談相手を紹介するのがWorried Sheepsというサービスです。</p>
+      <p>会社で上司に叱られた。学校で先生に理不尽に怒られた。</p>
+      <p>そんな日々溜まっていく鬱憤を晴らしましょう。</p>
+      <p>まずはその一歩を踏み出してみませんか？</p>
+      <p>力に慣れるかは分かりませんが、悩みを聞くことはできます！</p>
+      <p>詳しくは下の「使い方」から確認してみてください。</p>
+    </div>
+    <div class="spacer s2"></div>
+    
+    <div>
+      <img src="./image/cutesheep.svg" alt="cutesheep" class="sheep1">
+      <img src="./image/cutesheep.svg" alt="cutesheep" class="sheep2">
+      <img src="./image/cutesheep.svg" alt="cutesheep" class="sheep3">
+    </div>
+
+  </div>
+
+  <div class="how" id="how">
+    <div class="section">
+      <img src="./image/sheep.svg" alt="sheep">
+      <h1>WSの使用方法</h1>
+      <img src="./image/sheep.svg" alt="sheep">
+    </div>
+    <div class="spacer s2"></div>
+    <div class="spacer s0"></div>
+    <div class="desc">
+      <div class="spacer s0"></div>
+      <ul id="reveal-elements">
+        <li class="first digit">
+          <p>Payボタンもしくは上記のボタンをクリックし、決済を完了させる。</p>
+        </li>
+        <li class="second digit">
+          <p>決済が完了したら、即発行のZoomURLが届くのでそれをクリックする。</p>
+        </li>
+        <li class="third digit">
+          <p>Zoomを立ち上げ待機する。</p>
+        </li>
+      </ul>
+      <div class="spacer s2"></div>
+    </div>
+  </div>
+
+  <div class="ask" id="ask">
+    <div class="wrapper">
+      <div class="section">
+        <img src="./image/sheep.svg" alt="sheep">
+        <h1>お問い合わせ</h1>
+        <img src="./image/sheep.svg" alt="sheep">
+      </div>
+      <form class="form" action="/ok" method="post">
+        <input type="text" class="name field-in font" placeholder="Your Name" name="name"/>
+        
+        <input type="text" class="email field-in font" placeholder="Email" name="email"/>
+        
+        <textarea class="message field-in font" placeholder="Message" name="msg"></textarea>
+        
+        <button class="submit font" href="#">Submit</button>
+      </form>
+      <div class="shadow"></div>
+    </div>
+  </div>
+  Icons made by <a href="https://www.flaticon.com/authors/freepik" target="_blank" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" target="_blank"title="Flaticon"> www.flaticon.com</a>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="./javascripts/jquery.js"></script>
+  <script src="./javascripts/scrollmagic.js"></script>
+
+</body>
+</html>
