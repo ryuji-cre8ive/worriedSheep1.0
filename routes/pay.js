@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const SendToSlack = require('../lib/SendToSlack');
 const createRoom = require('../lib/SendToZoom');
 const payChannel = process.env.PAYCHANNEL.toString();
