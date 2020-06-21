@@ -5,7 +5,7 @@ const messageChannel = process.env.MSGCHANNEL.toString();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index');
 });
 
 router.post('/ok', (req, res, next) => {
