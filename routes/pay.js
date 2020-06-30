@@ -16,7 +16,7 @@ router.post('/ok', async (req, res) => {
   await SendToSlack(payChannel, req.body.date + req.body.time);
   await SendToSlack(payChannel, createdRoomInfo.hostUrl);
 
-  res.send(`<a href="${createdRoomInfo.customerUrl}" font-size="20px">Join to ZOOM!</a>
+  res.send(`<a href="${createdRoomInfo.customerUrl}">Join to ZOOM!</a>
             <p>${createdRoomInfo.customerUrl}</p>`);
 });
 
