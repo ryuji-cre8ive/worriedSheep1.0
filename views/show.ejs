@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <title>detail</title>
-  <link rel="stylesheet" href="./stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <a href="/" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
-  </header>
-  <%= const url = <%= url %> <%>;
-  <a href=url>Let's meeting</a>
-  <h1><%= url %></h1>
-  <h3>これが参加するためのURLです。</h3>
-  <form method="post" action="/pay/ok/check">
-    <input value="トップに戻る" type="submit">
-  </form>
+  <div id="pc-container">
+    <header class="page-header">
+      <a href="/" class="title"><img src="/image/icon.svg" alt="sheep image" width="50"></a>
+      <ul class="menu">
+        <li><a href="/">About</a></li>
+        <li><a href="/">How</a></li>
+        <li><a href="/pay">Pay</a></li>
+        <li><a href="/">お問い合わせ</a></li>
+      </ul>
+    </header>
+
+    <div class="join">
+      <p>このURLで時間になったら参加してください</p>
+      <p><%= joinUrl %></p>
+      <p>ありがとうございます</p>
+    </div>
+    
+    
+  </div>
+
+  <div id="smart-container">
+    <header>
+      <a href="/" class="title"><img src="/image/icon.svg" alt="sheep image" width="50"></a>
+      <p>WorriedSheep</p>
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="/">WorriedSheepとは</a></li>
+            <li><a href="/">使い方</a></li>
+            <li><a href="/pay">お支払い</a></li>
+            <li><a href="/">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <div class="btn-trigger" id="btn01">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="join">
+      <a href="<%= joinUrl %>">Meetingに参加する！</a>
+      <p>時間になったら上記のリンクから参加してください</p>
+      <p>ありがとうございます</p>
+    </div>
+    
+  </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
+  <script src="/javascripts/jquery.js"></script>
+  <script src="./javascripts/scrollmagic.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
 </body>
 </html>
