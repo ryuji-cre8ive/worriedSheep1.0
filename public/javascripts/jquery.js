@@ -10,3 +10,30 @@ $(function () {
     return false;
   });
 });
+$(function(){
+  
+  $('.btn-trigger').on('click', function() {
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+
+(function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.btn-trigger');
+  var $mask  = $('#mask');
+  var open   = 'open'; // class
+  // menu open close
+  $btn.on( 'click', function() {
+    if ( $nav.hasClass( open ) ) {
+      $nav.removeClass( open );
+    } else {
+      $nav.addClass( open );
+    }
+  });
+  // mask close
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+} )(jQuery);
+

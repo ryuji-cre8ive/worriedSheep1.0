@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
   <title>payments</title>
   <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <a href="/" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
-  </header>
-
-  <div class="caution">
-    <h1>- お読みください -</h1>
-    <p>一度課金してしまうと返金の方ができません。</p>
-    <p>ご了承ください。</p>
-  </div>
+  <div id="pc-container">
+    <header class="page-header">
+      <a href="/" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
+    </header>
   
-  <div class="haveKyash">
-    <h1>Kyashをお持ちの方</h1>
-    <h4>お持ちのiPhoneもしくはAndroidでお支払いください。</h4>
-    <img src="./image/my-qr.jpeg" alt="my-QRcode" width="300px">
-    <h4>希望する日程を記してください</h4>
-    <form action="/pay/ok" method="post">
-      <p>形式はYYYY-MM-DD HH:MM:ss</p>
-      <input type="text" name="date">
-      <input type="submit" value="OK">
-    </form>
+    <div class="caution">
+      <h1>- お読みください -</h1>
+      <p>一度課金してしまうと返金の方ができません。</p>
+      <p>ご了承ください。</p>
+    </div>
     
+    <div class="haveKyash">
+      <h1>Kyashをお持ちの方</h1>
+      <h4>お持ちのiPhoneもしくはAndroidでお支払いください。</h4>
+      <img src="./image/my-qr.jpeg" alt="my-QRcode" width="300px">
+      <h4>希望する日程を記してください</h4>
+      <form action="/pay/ok" method="post">
+        <input type="date" name="date">
+        <input type="time" name="time">
+        <input type="submit" value="決定">
+      
+    </div>
+  
+    <div class="noKyash">
+      <h4>AppStore or GooglePlayからKyashをダウンロードしてください。</h4>
+      <h4>お手数をおかけして申し訳ありません</h4>
+    </div>
   </div>
 
-  <div class="noKyash">
-    <h4>AppStore or GooglePlayからKyashをダウンロードしてください。</h4>
-    <h4>お手数をおかけして申し訳ありません</h4>
+  <div id="smart-container">
+    <header>
+      <a href="#" class="title"><img src="./image/icon.svg" alt="sheep image" width="50"></a>
+      <p>WorriedSheep</p>
+    <div id="navArea">
+      <nav>
+        <div class="inner">
+          <ul>
+            <li><a href="#about">WorriedSheepとは</a></li>
+            <li><a href="#how">使い方</a></li>
+            <li><a href="/pay">お支払い</a></li>
+            <li><a href="#ask">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <div class="btn-trigger" id="btn01">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <div class="caution">
+      <p>-お読みください-</p>
+      <p>一度課金してしまうと返金の方ができません。</p>
+      <p>ご了承ください。</p>
+    </div>
+    <button><a href="https://kyash.me/payments/hTXTCQlzoUOl1GFyj82YbEGI2whr">課金する</a></button>
+
+    <div>
+      <form action="/pay/ok" method="post">
+        <input type="date" name="date">
+        <input type="time" name="time">
+        <input type="submit" value="決定">
+      </form>
+    </div>
+    <div class="noKyash">
+      <p>Kyashをお持ちでない方</p>
+      <a href="https://apps.apple.com/JP/app/id1084264883?mt=8">iPhoneのかたはこちら</a>
+      <a href="https://play.google.com/store/apps/details?id=co.kyash&referrer=af_tranid%3DaiVGTUSBEr6N-2MYAzjm2g%26pid%3DPublicweb%26c%3Dtop%26af_web_id%3Dde8a8c80-b160-4a95-be6e-9a59967d88a0-c">Androidのかたはこちら</a>
+      <p>ご不便をおかけしますが何卒よろしくお願いいたします</p>
+    </div>
   </div>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+  <script src="./javascripts/jquery.js"></script>
+  <script src="./javascripts/scrollmagic.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
 </body>
 </html>

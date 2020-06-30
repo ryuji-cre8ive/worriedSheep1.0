@@ -10,16 +10,13 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/ok', async (req, res) => {
-  const plan = req.body.date;
-  const date = plan.split(' ')[0];
-  const time = plan.split(' ')[1];
-
-  const totalDate = date + 'T' + time;
+  console.log(req.body);
+  const totalDate = req.body.date + "T" + req.body.time + ":00";
   const createdRoomInfo = await createRoom(totalDate);
-
-  await SendToSlack(payChannel, plan);
+  await SendToSlack(payChannel, req.body.date + req.body.time);
   await SendToSlack(payChannel, createdRoomInfo.hostUrl);
-  res.send(`<a href="${createdRoomInfo.customerUrl}">Join to ZOOM!</a>
+
+  res.send(`<a href="${createdRoomInfo.customerUrl}" font-size="20px">Join to ZOOM!</a>
             <p>${createdRoomInfo.customerUrl}</p>`);
 });
 
